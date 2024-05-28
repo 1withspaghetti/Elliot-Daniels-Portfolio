@@ -6,6 +6,9 @@ import cover from "../../public/imgs/cover.jpg"
 import FontCycleHeader from "@/components/FontCycleHeader";
 import Link from "next/link";
 import { Edu_TAS_Beginner } from "next/font/google";
+import PhotoList from "@/components/PhotoList";
+import { HOME_PAGE_IMAGES } from "@/portfolio_config";
+import ScrollIndicator from "@/components/ScrollIndicator";
 
 const edu_tas_beginner = Edu_TAS_Beginner({
   weight: '400',
@@ -28,7 +31,7 @@ export default function Home() {
       >
         <Image src={cover} alt="Cover Image" fill priority className="object-center object-cover pointer-events-none" />
 
-        <div className="absolute bottom-0 left-0 right-0 h-1/4 bg-gradient-to-b from-transparent to-black" />
+        <div className="absolute bottom-0 left-0 right-0 h-1/4 bg-gradient-to-b from-transparent to-[#0d0e16]" />
 
         <div className="absolute top-1/4 left-1/2 transform -translate-x-1/2 -translate-y-1/2 scale-[0.25] sm:scale-[0.4] lg:scale-75 2xl:scale-100">
           <div className="flex flex-col items-center">
@@ -91,16 +94,12 @@ export default function Home() {
           animate={{ opacity: 1 }}
           transition={{ ease: "easeOut", duration: 1, delay: 2.5 }}
         >
-          <div className="p-8 flex gap-4 items-end">
-            <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="currentColor"><path d="M480-240 240-480l56-56 144 144v-368h80v368l144-144 56 56-240 240Z"/></svg>
-            <span className="text-2xl">Portfolio</span>
-            <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="currentColor"><path d="M480-240 240-480l56-56 144 144v-368h80v368l144-144 56 56-240 240Z"/></svg>
-          </div>
+          <ScrollIndicator />
         </motion.div>
 
       </motion.div>
-      <div className="w-full h-96 bg-black flex p-4 gap-4">
-        
+      <div className="w-full">
+        <PhotoList photos={HOME_PAGE_IMAGES} />
       </div>
     </motion.main>
   );
