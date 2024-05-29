@@ -29,7 +29,7 @@ export default function Home() {
         animate={{ opacity: 1 }}
         transition={{ ease: "easeOut", duration: 1 }}
       >
-        <Image src={cover} alt="Cover Image" fill priority className="object-center object-cover pointer-events-none" />
+        <Image src={cover} alt="Cover Image" fill priority placeholder="blur" className="object-center object-cover pointer-events-none" />
 
         <div className="absolute bottom-0 left-0 right-0 h-1/4 bg-gradient-to-b from-transparent to-[#0d0e16]" />
 
@@ -98,7 +98,7 @@ export default function Home() {
         </motion.div>
 
       </motion.div>
-      <div className="w-full">
+      <div className="w-full mb-24">
         <PhotoList photos={HOME_PAGE_IMAGES} />
       </div>
     </motion.main>

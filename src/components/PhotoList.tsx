@@ -10,7 +10,7 @@ export type PhotoListProps = {
 export default function PhotoList({ photos }: PhotoListProps) {
 
     return (
-        <div className="flex flex-wrap justify-center gap-2 p-4">
+        <div className="flex flex-wrap justify-center gap-4 p-4">
             {photos.map((photo, index) => (
                 <motion.div
                     key={index}
@@ -19,13 +19,9 @@ export default function PhotoList({ photos }: PhotoListProps) {
                     viewport={{ once: true }}
                     exit={{ opacity: 0, y: 100}}
                     transition={{ ease: "easeOut", duration: 0.5 }}
-                    className=''
+                    className='h-64 max-w-md overflow-hidden'
                 >
-                    <Image
-                        src={photo}
-                        alt="Portfolio Image"
-                        className="h-64 max-w-md overflow-hidden object-cover object-center pointer-events-none"
-                    />
+                    <InteractiveImage photo={photo} />
                 </motion.div>
             ))}
         </div>
