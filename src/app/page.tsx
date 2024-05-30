@@ -1,6 +1,6 @@
 "use client";
 
-import { motion } from "framer-motion";
+import { motion, useScroll, useTransform } from "framer-motion";
 import Image from "next/image";
 import cover from "../../public/imgs/cover.jpg"
 import FontCycleHeader from "@/components/FontCycleHeader";
@@ -9,6 +9,7 @@ import { Edu_TAS_Beginner } from "next/font/google";
 import PhotoList from "@/components/PhotoList";
 import { HOME_PAGE_IMAGES } from "@/portfolio_config";
 import ScrollIndicator from "@/components/ScrollIndicator";
+import Header from "@/components/Header";
 
 const edu_tas_beginner = Edu_TAS_Beginner({
   weight: '400',
@@ -17,6 +18,11 @@ const edu_tas_beginner = Edu_TAS_Beginner({
 });
 
 export default function Home() {
+
+  const { scrollY } = useScroll();
+  const windowHeight = typeof window !== 'undefined' ? window.innerHeight : 0;
+  const headerOpacity = useTransform(scrollY, (value) => Math.max((value - windowHeight + 100) / 100, 0));
+
   return (
     <motion.main
       className="w-full"
@@ -78,7 +84,7 @@ export default function Home() {
           animate={{ opacity: 1 }}
           transition={{ ease: "easeOut", duration: 1, delay: 2.25 }}
         >
-          <Link href="/about" className="p-8 flex flex-col items-center gap-2 group">
+          <Link href="/hobbies" className="p-8 flex flex-col items-center gap-2 group">
             <div className="rounded-full bg-white p-2 group-hover:translate-x-3 transition">
             <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#000"><path d="m560-240-56-58 142-142H160v-80h486L504-662l56-58 240 240-240 240Z"/></svg>
             </div>
@@ -98,6 +104,14 @@ export default function Home() {
         </motion.div>
 
       </motion.div>
+
+      <motion.div
+        style={{ opacity: headerOpacity }}
+        className="sticky top-0 left-0 right-0 z-40"
+      >
+        <Header />
+      </motion.div>
+
       <div className="w-full mb-24">
         <PhotoList photos={HOME_PAGE_IMAGES} />
       </div>
