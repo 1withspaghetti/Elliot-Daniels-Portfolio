@@ -20,7 +20,7 @@ export default function Hobbies() {
 
         <div className="flex flex-col items-center mt-16">
             <motion.div
-                className="relative w-full max-w-7xl h-[512px] m-4 sm:m-8"
+                className="relative w-full max-w-7xl h-[512px] m-4 sm:m-8 overflow-hidden"
                 initial={{ opacity: 0 }}
                 animate={{ opacity: 1 }}
                 transition={{ ease: "easeOut", duration: 1 }}
@@ -38,9 +38,9 @@ export default function Hobbies() {
                     initial={{ opacity: 0 }}
                     animate={{ opacity: 1 }}
                     transition={{ duration: 1 }}
-                    className="absolute bottom-0 left-0 right-0 h-1/2 flex items-center"
+                    className="absolute bottom-0 left-0 right-0"
                 >
-                    <div>
+                    <div className="w-full ">
                         <div className="h-12 bg-gradient-to-b from-transparent to-black opacity-65" />
                         <div className="p-4 sm:p-8 bg-black bg-opacity-65 font-lg">
                             <motion.div 
@@ -49,10 +49,11 @@ export default function Hobbies() {
                                 transition={{ ease: "easeOut", duration: 0.5, delay: 1.0}}
                                 className="overflow-hidden"
                             >
-                                Hi, I'm Elliot Daniels 👋 <br /> <br />
-                                I'm a photographer and local gay furry based in Seattle WA with a dream of becoming a professional photographer.
-                                I like to distribute ghost guns and blow up large corporations like Apple and Microsoft. I am a threat to my 
-                                community and I am proud of it.
+                                <div className="text-2xl max-w-4xl mx-auto hidden sm:block mb-4">
+                                    <div className=""><span className="text-4xl">“</span>FIRST is a microcosm of the real engineering experience because it’s a problem too big, in a time too short, with a budget too small, and a team too large.<span className="text-4xl">”</span></div>
+                                    <div className="italic text-right">-Woodie Flowers</div>
+                                </div>
+                                <div className="text-lg">I joined my school’s robotics team in my freshman year and instantly fell in love with it. Over the course of the 3 seasons I have been on the team so far, I have been on the mechanical team and in the most recent season I had the privilege of being my teams driver. While I can’t take photos during matches, I enjoy taking photos of the rest of my team working on the robot or cheering in the stands.</div>
                             </motion.div>
                         </div>
                         <div className="h-12 bg-gradient-to-t from-transparent to-black opacity-65" />

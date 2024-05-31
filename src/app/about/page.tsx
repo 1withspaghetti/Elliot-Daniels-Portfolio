@@ -17,7 +17,7 @@ export default function About() {
             <Header />
         </motion.div>
 
-        <div className="flex flex-col items-center mt-4">
+        <div className="flex flex-col sm:flex-row items-center justify-center mt-4">
             <motion.div
                 className="relative w-full max-w-lg m-4 sm:m-8"
                 initial={{ opacity: 0 }}
@@ -32,32 +32,16 @@ export default function About() {
                     placeholder="blur" 
                     className="object-center object-cover pointer-events-none"
                 />
-
-                <motion.div
-                    initial={{ opacity: 0 }}
-                    animate={{ opacity: 1 }}
-                    transition={{ duration: 1 }}
-                    className="absolute bottom-0 left-0 right-0 h-1/2 flex items-center"
-                >
-                    <div>
-                        <div className="h-12 bg-gradient-to-b from-transparent to-black opacity-65" />
-                        <div className="p-4 sm:p-8 bg-black bg-opacity-65 font-lg">
-                            <motion.div 
-                                initial={{ height: 0 }}
-                                animate={{ height: "auto" }}
-                                transition={{ ease: "easeOut", duration: 0.5, delay: 1.0}}
-                                className="overflow-hidden"
-                            >
-                                Hi, I'm Elliot Daniels 👋 <br /> <br />
-                                I'm a photographer and local gay furry based in Seattle WA with a dream of becoming a professional photographer.
-                                I like to distribute ghost guns and blow up large corporations like Apple and Microsoft. I am a threat to my 
-                                community and I am proud of it.
-                            </motion.div>
-                        </div>
-                        <div className="h-12 bg-gradient-to-t from-transparent to-black opacity-65" />
-                    </div>
-                </motion.div>
-
+            </motion.div>
+            <motion.div
+                initial={{ height: 0 }}
+                animate={{ height: "auto" }}
+                transition={{ ease: "easeOut", duration: 0.5, delay: 1.0}}
+                className="max-w-lg overflow-hidden m-4"
+            >
+                <span className="text-2xl sm:text-4xl font-bold">My name is Elliot Daniels</span>
+                <br />
+                <span className="text-lg">and I’m a high school junior in Seattle. I love taking photos, fixing electronics, playing video games, and competing with my team in the FIRST Robotics Competition. I have been interested in photography for a long time but really fell in love with it after getting my first real camera for my 17th birthday. I am largely self-taught and driven by a desire to improve my skills, while I did attend a class in school, I found it to be largely unhelpful.  Some of my favorite photos have been taken in amazing places with friends and family and through photography I am able to capture moments and express the mood in a scene. I think photography is very interesting and look forward to expanding my skills in techniques and editing.</span>
             </motion.div>
         </div>
     </main>
