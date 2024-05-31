@@ -3,6 +3,7 @@
 import { motion, useScroll, useTransform } from "framer-motion";
 import Image from "next/image";
 import cover from "../../public/imgs/cover.webp"
+import cover_mobile from "../../public/imgs/cover_mobile.webp"
 import FontCycleHeader from "@/components/FontCycleHeader";
 import Link from "next/link";
 import { Edu_TAS_Beginner } from "next/font/google";
@@ -11,6 +12,7 @@ import { HOME_PAGE_IMAGES } from "@/portfolio_config";
 import ScrollIndicator from "@/components/ScrollIndicator";
 import Header from "@/components/Header";
 import NotByAIBadge from "@/components/NotByAIBadge";
+import { useEffect, useState } from "react";
 
 const edu_tas_beginner = Edu_TAS_Beginner({
   weight: '400',
@@ -24,6 +26,18 @@ export default function Home() {
   const windowHeight = typeof window !== 'undefined' ? window.innerHeight : 0;
   const headerOpacity = useTransform(scrollY, (value) => Math.max((value - windowHeight + 100) / 100, 0));
 
+
+  const [ useMobileCover, setUseMobileCover ] = useState<boolean|undefined>(undefined);
+
+  useEffect(() => {
+    const handleResize = () => {
+      setUseMobileCover(window.innerHeight > window.innerWidth);
+    }
+    handleResize();
+    window.addEventListener('resize', handleResize);
+    return () => window.removeEventListener('resize', handleResize);
+  }, []);
+
   return (
     <main
       className="w-full"
@@ -34,7 +48,13 @@ export default function Home() {
         animate={{ opacity: 1 }}
         transition={{ ease: "easeOut", duration: 1 }}
       >
-        <Image src={cover} alt="Cover Image" fill priority placeholder="blur" className="object-center object-cover pointer-events-none" />
+        { useMobileCover !== undefined &&
+          ( useMobileCover ?
+            <Image src={cover_mobile} alt="Cover Image" fill priority placeholder="blur" className="object-center object-cover pointer-events-none" />
+          :
+            <Image src={cover} alt="Cover Image" fill priority placeholder="blur" className="object-center object-cover pointer-events-none" />
+          )
+        }
 
         <div className="absolute bottom-0 left-0 right-0 h-1/4 bg-gradient-to-b from-transparent to-[#0d0e16]" />
 
