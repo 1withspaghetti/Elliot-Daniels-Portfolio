@@ -18,9 +18,10 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body className={inter.className}>
-        <ClientAnimatePresence>
-          {children}
-        </ClientAnimatePresence>
+        {children}
+        <div className="w-full px-4 py-8 text-center">
+          <span className="opacity-50">Made by Tyler Place :D</span>
+        </div>
       </body>
     </html>
   );

@@ -10,6 +10,7 @@ import PhotoList from "@/components/PhotoList";
 import { HOME_PAGE_IMAGES } from "@/portfolio_config";
 import ScrollIndicator from "@/components/ScrollIndicator";
 import Header from "@/components/Header";
+import NotByAIBadge from "@/components/NotByAIBadge";
 
 const edu_tas_beginner = Edu_TAS_Beginner({
   weight: '400',
@@ -24,10 +25,8 @@ export default function Home() {
   const headerOpacity = useTransform(scrollY, (value) => Math.max((value - windowHeight + 100) / 100, 0));
 
   return (
-    <motion.main
+    <main
       className="w-full"
-      exit={{ opacity: 0, y: -100 }}
-      transition={{ ease: "easeIn", duration: 1.5 }}
     >
       <motion.div
         className="relative w-full h-screen"
@@ -95,10 +94,19 @@ export default function Home() {
         </motion.div>
 
         <motion.div 
-          className="absolute bottom-0 left-1/2 -translate-x-1/2"
+          className="absolute bottom-0 right-0 p-4 hidden sm:block"
           initial={{ opacity: 0 }}
           animate={{ opacity: 1 }}
           transition={{ ease: "easeOut", duration: 1, delay: 2.5 }}
+        >
+          <NotByAIBadge />
+        </motion.div>
+
+        <motion.div 
+          className="absolute bottom-0 left-1/2 -translate-x-1/2"
+          initial={{ opacity: 0 }}
+          animate={{ opacity: 1 }}
+          transition={{ ease: "easeOut", duration: 1, delay: 2.75 }}
         >
           <ScrollIndicator />
         </motion.div>
@@ -107,7 +115,7 @@ export default function Home() {
 
       <motion.div
         style={{ opacity: headerOpacity }}
-        className="sticky top-0 left-0 right-0 z-40"
+        className="sticky top-0 left-0 right-0 z-40 shadow"
       >
         <Header />
       </motion.div>
@@ -115,6 +123,6 @@ export default function Home() {
       <div className="w-full mb-24">
         <PhotoList photos={HOME_PAGE_IMAGES} />
       </div>
-    </motion.main>
+    </main>
   );
 }
