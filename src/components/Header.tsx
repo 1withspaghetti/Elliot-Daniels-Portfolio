@@ -16,6 +16,9 @@ export default function Header() {
                 <li>
                     <Link href="/hobbies" className="py-4 hover:text-purple-300 transition">Hobbies</Link>
                 </li>
+                <li>
+                    <Link href="https://elliotdaniels.darkroom.com/" className="py-4 hover:text-purple-300 transition">Store</Link>
+                </li>
             </ul>
         </header>
     );
