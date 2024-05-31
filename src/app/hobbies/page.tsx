@@ -2,10 +2,9 @@
 
 import { motion } from "framer-motion";
 import Image from "next/image";
-import cover from "../../../public/imgs/hobbies/cover.jpg"
 import Header from "@/components/Header";
 import PhotoList from "@/components/PhotoList";
-import { HOBBIES_PAGE_IMAGES } from "@/portfolio_config";
+import { HOBBIES_PAGE_IMAGES, HOBBIES_PAGE_COVER } from "@/portfolio_config";
 
 export default function Hobbies() {
 
@@ -27,7 +26,7 @@ export default function Hobbies() {
                 transition={{ ease: "easeOut", duration: 1 }}
             >
                 <Image
-                    src={cover} 
+                    src={HOBBIES_PAGE_COVER} 
                     alt="Photo of a robot made by my robotics team" 
                     fill
                     priority 

@@ -22,6 +22,8 @@ import ED103717 from '../public/imgs/home/ED103717.webp'
 import ED104057 from '../public/imgs/home/ED104057.webp'
 import ED104101 from '../public/imgs/home/ED104101.webp'
 
+import aboutPageCover from '../public/imgs/about/cover.jpg'
+
 import ED102300 from '../public/imgs/hobbies/ed102300_53611847812_o.webp'
 import ED102304 from '../public/imgs/hobbies/ed102304_53612928488_o.webp'
 import ED102309 from '../public/imgs/hobbies/ed102309_53612718561_o.webp'
@@ -80,6 +82,11 @@ export const HOME_PAGE_IMAGES = [
     ED104101,
 ];
 
+
+export const ABOUT_PAGE_COVER = aboutPageCover;
+
+
+export const HOBBIES_PAGE_COVER = ED102378;
 
 export const HOBBIES_PAGE_IMAGES = [
     ED102300,

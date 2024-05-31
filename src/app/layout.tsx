@@ -1,7 +1,6 @@
 import type { Metadata } from "next";
 import { Inter } from "next/font/google";
 import "./globals.css";
-import ClientAnimatePresence from "@/components/ClientAnimatePresence";
 
 const inter = Inter({ subsets: ["latin"] });
 
@@ -20,7 +19,7 @@ export default function RootLayout({
       <body className={inter.className}>
         {children}
         <div className="w-full px-4 py-8 text-center">
-          <span className="opacity-50">Made by Tyler Place :D</span>
+          <span className="opacity-50">Website made by Tyler Place :D</span>
         </div>
       </body>
     </html>

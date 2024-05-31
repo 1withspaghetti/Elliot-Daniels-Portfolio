@@ -2,8 +2,8 @@
 
 import { motion } from "framer-motion";
 import Image from "next/image";
-import cover from "../../../public/imgs/about/cover.jpg"
 import Header from "@/components/Header";
+import { ABOUT_PAGE_COVER } from "@/portfolio_config";
 
 export default function About() {
 
@@ -25,7 +25,7 @@ export default function About() {
                 transition={{ ease: "easeOut", duration: 1 }}
             >
                 <Image
-                    src={cover} 
+                    src={ABOUT_PAGE_COVER} 
                     alt="Photo of Elliot" 
                     width={512} 
                     priority 
