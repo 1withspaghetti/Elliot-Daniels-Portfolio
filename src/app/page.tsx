@@ -2,7 +2,7 @@
 
 import { motion, useScroll, useTransform } from "framer-motion";
 import Image from "next/image";
-import cover from "../../public/imgs/cover.jpg"
+import cover from "../../public/imgs/cover.webp"
 import FontCycleHeader from "@/components/FontCycleHeader";
 import Link from "next/link";
 import { Edu_TAS_Beginner } from "next/font/google";
