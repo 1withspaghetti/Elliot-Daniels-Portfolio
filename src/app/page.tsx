@@ -55,7 +55,7 @@ export default function Home() {
               className="text-white text-5xl tracking-widest"
             >
               <span className={edu_tas_beginner.className}>
-                Design Portfolio
+                Photography Portfolio
               </span>
             </motion.div>
           </div>
