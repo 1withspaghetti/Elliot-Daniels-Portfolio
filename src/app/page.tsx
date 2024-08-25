@@ -50,9 +50,9 @@ export default function Home() {
       >
         { useMobileCover !== undefined &&
           ( useMobileCover ?
-            <Image src={cover_mobile} alt="Cover Image" fill priority placeholder="blur" className="object-center object-cover pointer-events-none" />
+            <Image src={cover_mobile} alt="Cover Image" fill priority quality={100} placeholder="blur" className="object-center object-cover pointer-events-none" />
           :
-            <Image src={cover} alt="Cover Image" fill priority placeholder="blur" className="object-center object-cover pointer-events-none" />
+            <Image src={cover} alt="Cover Image" fill priority quality={100} placeholder="blur" className="object-center object-cover pointer-events-none" />
           )
         }
 
