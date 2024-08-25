@@ -21,6 +21,15 @@ import ED103711 from '../public/imgs/home/ED103711.webp'
 import ED103717 from '../public/imgs/home/ED103717.webp'
 import ED104057 from '../public/imgs/home/ED104057.webp'
 import ED104101 from '../public/imgs/home/ED104101.webp'
+import ED104533 from '../public/imgs/home/ED104533.webp'
+import ED104682 from '../public/imgs/home/ED104682.webp'
+import ED104684 from '../public/imgs/home/ED104684.webp'
+import ED104704 from '../public/imgs/home/ED104704.webp'
+import ED104741 from '../public/imgs/home/ED104741.webp'
+import ED104757 from '../public/imgs/home/ED104757.webp'
+import ED104760 from '../public/imgs/home/ED104760.webp'
+import ED105179 from '../public/imgs/home/ED105179.webp'
+import ED105234 from '../public/imgs/home/ED105234.webp'
 
 import aboutPageCover from '../public/imgs/about/cover.jpg'
 
@@ -57,6 +66,15 @@ import ED102398 from '../public/imgs/hobbies/ed102398_53612923193_o.webp'
 // Every image should be imported above, the import should be added to the arrays below
 
 export const HOME_PAGE_IMAGES = [
+    ED105234,
+    ED105179,
+    ED104760,
+    ED104757,
+    ED104741,
+    ED104704,
+    ED104684,
+    ED104682,
+    ED104533,
     ED104101,
     ED104057,
     ED103717,
