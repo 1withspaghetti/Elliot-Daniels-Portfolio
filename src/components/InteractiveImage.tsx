@@ -41,6 +41,7 @@ export default function InteractiveImage({ photo }: { photo: StaticImageData }) 
                         <Image
                             src={photo}
                             fill
+                            quality={100}
                             alt="Portfolio Image"
                             className="w-full h-full object-contain object-center pointer-events-none"
                         />
