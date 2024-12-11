@@ -103,7 +103,7 @@ export default function Home() {
           animate={{ opacity: 1 }}
           transition={{ ease: "easeOut", duration: 1, delay: 2.25 }}
         >
-          <Link href="/hobbies" className="p-8 flex flex-col items-center gap-2 group">
+          <Link href="/robotics" className="p-8 flex flex-col items-center gap-2 group">
             <div className="rounded-full bg-white p-2 group-hover:translate-x-3 transition">
             <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#000"><path d="m560-240-56-58 142-142H160v-80h486L504-662l56-58 240 240-240 240Z"/></svg>
             </div>

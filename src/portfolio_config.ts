@@ -33,33 +33,33 @@ import ED105234 from '../public/imgs/home/ED105234.webp'
 
 import aboutPageCover from '../public/imgs/about/cover.jpg'
 
-import ED102300 from '../public/imgs/hobbies/ed102300_53611847812_o.webp'
-import ED102304 from '../public/imgs/hobbies/ed102304_53612928488_o.webp'
-import ED102309 from '../public/imgs/hobbies/ed102309_53612718561_o.webp'
-import ED102314 from '../public/imgs/hobbies/ed102314_53613061149_o.webp'
-import ED102317 from '../public/imgs/hobbies/ed102317_53612718966_o.webp'
-import ED102319 from '../public/imgs/hobbies/ed102319_53612928843_o.webp'
-import ED102334 from '../public/imgs/hobbies/ed102334_53612928893_o.webp'
-import ED102336 from '../public/imgs/hobbies/ed102336_53612719176_o.webp'
-import ED102344 from '../public/imgs/hobbies/ed102344_53613061344_o.webp'
-import ED102345 from '../public/imgs/hobbies/ed102345_53613149735_o.webp'
-import ED102346 from '../public/imgs/hobbies/ed102346_53612696071_o.webp'
-import ED102351 from '../public/imgs/hobbies/ed102351_53612907398_o.webp'
-import ED102356 from '../public/imgs/hobbies/ed102356_53613147335_o.webp'
-import ED102357 from '../public/imgs/hobbies/ed102357_53612907598_o.webp'
-import ED102360 from '../public/imgs/hobbies/ed102360_53612909618_o.webp'
-import ED102364 from '../public/imgs/hobbies/ed102364_53612700661_o.webp'
-import ED102367 from '../public/imgs/hobbies/ed102367_53612702051_o.webp'
-import ED102370 from '../public/imgs/hobbies/ed102370_53613044459_o.webp'
-//import ED102377 from '../public/imgs/hobbies/ed102377_53613050289_o.webp' // duplicate
-import ED102378 from '../public/imgs/hobbies/ed102378_53612707496_o.webp'
-import ED102381 from '../public/imgs/hobbies/ed102381_53613050839_o.webp'
-import ED102384 from '../public/imgs/hobbies/ed102384_53613048634_o.webp'
-import ED102386 from '../public/imgs/hobbies/ed102386_53612922493_o.webp'
-import ED102388 from '../public/imgs/hobbies/ed102388_53612712446_o.webp'
-//import ED102392 from '../public/imgs/hobbies/ed102392_53611842952_o.webp' // duplicate
-import ED102398 from '../public/imgs/hobbies/ed102398_53612923193_o.webp'
-//import ED102472 from '../public/imgs/hobbies/ed102472_53613060874_o.webp' // duplicate
+import ED102300 from '../public/imgs/robotics/ed102300_53611847812_o.webp'
+import ED102304 from '../public/imgs/robotics/ed102304_53612928488_o.webp'
+import ED102309 from '../public/imgs/robotics/ed102309_53612718561_o.webp'
+import ED102314 from '../public/imgs/robotics/ed102314_53613061149_o.webp'
+import ED102317 from '../public/imgs/robotics/ed102317_53612718966_o.webp'
+import ED102319 from '../public/imgs/robotics/ed102319_53612928843_o.webp'
+import ED102334 from '../public/imgs/robotics/ed102334_53612928893_o.webp'
+import ED102336 from '../public/imgs/robotics/ed102336_53612719176_o.webp'
+import ED102344 from '../public/imgs/robotics/ed102344_53613061344_o.webp'
+import ED102345 from '../public/imgs/robotics/ed102345_53613149735_o.webp'
+import ED102346 from '../public/imgs/robotics/ed102346_53612696071_o.webp'
+import ED102351 from '../public/imgs/robotics/ed102351_53612907398_o.webp'
+import ED102356 from '../public/imgs/robotics/ed102356_53613147335_o.webp'
+import ED102357 from '../public/imgs/robotics/ed102357_53612907598_o.webp'
+import ED102360 from '../public/imgs/robotics/ed102360_53612909618_o.webp'
+import ED102364 from '../public/imgs/robotics/ed102364_53612700661_o.webp'
+import ED102367 from '../public/imgs/robotics/ed102367_53612702051_o.webp'
+import ED102370 from '../public/imgs/robotics/ed102370_53613044459_o.webp'
+//import ED102377 from '../public/imgs/robotics/ed102377_53613050289_o.webp' // duplicate
+import ED102378 from '../public/imgs/robotics/ed102378_53612707496_o.webp'
+import ED102381 from '../public/imgs/robotics/ed102381_53613050839_o.webp'
+import ED102384 from '../public/imgs/robotics/ed102384_53613048634_o.webp'
+import ED102386 from '../public/imgs/robotics/ed102386_53612922493_o.webp'
+import ED102388 from '../public/imgs/robotics/ed102388_53612712446_o.webp'
+//import ED102392 from '../public/imgs/robotics/ed102392_53611842952_o.webp' // duplicate
+import ED102398 from '../public/imgs/robotics/ed102398_53612923193_o.webp'
+//import ED102472 from '../public/imgs/robotics/ed102472_53613060874_o.webp' // duplicate
 
 
 // Add images here to be displayed in the respective sections
@@ -102,9 +102,9 @@ export const HOME_PAGE_IMAGES = [
 export const ABOUT_PAGE_COVER = aboutPageCover;
 
 
-export const HOBBIES_PAGE_COVER = ED102378;
+export const ROBOTICS_PAGE_COVER = ED102378;
 
-export const HOBBIES_PAGE_IMAGES = [
+export const ROBOTICS_PAGE_IMAGES = [
     ED102300,
     ED102304,
     ED102309,
