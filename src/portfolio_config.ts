@@ -33,6 +33,7 @@ import ED105234 from '../public/imgs/home/ED105234.webp'
 
 import aboutPageCover from '../public/imgs/about/cover.jpg'
 
+//robot images
 import ED102300 from '../public/imgs/robotics/ed102300_53611847812_o.webp'
 import ED102304 from '../public/imgs/robotics/ed102304_53612928488_o.webp'
 import ED102309 from '../public/imgs/robotics/ed102309_53612718561_o.webp'
@@ -60,6 +61,12 @@ import ED102388 from '../public/imgs/robotics/ed102388_53612712446_o.webp'
 //import ED102392 from '../public/imgs/robotics/ed102392_53611842952_o.webp' // duplicate
 import ED102398 from '../public/imgs/robotics/ed102398_53612923193_o.webp'
 //import ED102472 from '../public/imgs/robotics/ed102472_53613060874_o.webp' // duplicate
+import ED106304 from '../public/imgs/robotics/ED106304.webp'
+import ED106317 from '../public/imgs/robotics/ED106317.webp'
+import ED106340 from '../public/imgs/robotics/ED106340.webp'
+import ED106355 from '../public/imgs/robotics/ED106355.webp'
+import ED106821 from '../public/imgs/robotics/ED106821.webp'
+import ED107237 from '../public/imgs/robotics/ED107237.webp'
 
 
 // Add images here to be displayed in the respective sections
@@ -105,6 +112,12 @@ export const ABOUT_PAGE_COVER = aboutPageCover;
 export const ROBOTICS_PAGE_COVER = ED102378;
 
 export const ROBOTICS_PAGE_IMAGES = [
+    ED106304,
+    ED106317,
+    ED106340,
+    ED106355,
+    ED106821,
+    ED107237,
     ED102300,
     ED102304,
     ED102309,
@@ -127,7 +140,7 @@ export const ROBOTICS_PAGE_IMAGES = [
     ED102378,
     ED102381,
     ED102384,
-    ED102386,
+    //ED102386,
     ED102388,
     ED102392,
     ED102398,
