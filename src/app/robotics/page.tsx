@@ -53,7 +53,7 @@ export default function Robotics() {
                                     <div className=""><span className="text-4xl">“</span>FIRST is a microcosm of the real engineering experience because it’s a problem too big, in a time too short, with a budget too small, and a team too large.<span className="text-4xl">”</span></div>
                                     <div className="italic text-right">-Dr. Woodie Flowers</div>
                                 </div>
-                                <div className="text-lg">I joined my school’s robotics team in my freshman year and instantly fell in love with it. Over the course of the 3 seasons I have been on the team so far, I have been on the mechanical team and in the most recent season I had the privilege of being my teams driver. While I can’t take photos during matches, I enjoy taking photos of the rest of my team working on the robot or cheering in the stands. The photos below are taken of my team, 8248 ChainLynx, at FIRST robotics competitions.</div>
+                                <div className="text-lg">I joined my school’s robotics team in my freshman year and instantly fell in love with it. Over the course of the 3 seasons I have been on the team so far, I have been on the mechanical team and in the most recent season I had the privilege of being my teams driver. While I can’t take photos during matches, I enjoy taking photos of the rest of my team working on the robot or cheering in the stands. The photos below are taken of my team, 8248-ChainLynx, and a few other teams' robots, at FIRST robotics competitions.</div>
                             </motion.div>
                         </div>
                         <div className="h-12 bg-gradient-to-t from-transparent to-black opacity-65" />
